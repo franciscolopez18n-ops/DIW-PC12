@@ -1,0 +1,25 @@
+.card { 
+    width: 140px; 
+    height: 70px; 
+    display:grid; 
+    place-items:center; 
+    margin:12px 0; 
+    background:#f9fafb; }
+
+.a{  
+    border-width: 5px;
+    border-style: double;
+    border-color: transparent;
+}
+
+.b{
+    border-width: 10px;
+    border-style: dotted;
+    border-color: rgb(148, 28, 7);
+}
+
+.c{
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(253, 207, 0);
+}
