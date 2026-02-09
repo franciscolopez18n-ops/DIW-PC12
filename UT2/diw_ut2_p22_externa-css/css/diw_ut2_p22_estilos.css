@@ -1,0 +1,78 @@
+/* 
+5. Modificar la tipografía de body a 'Georgia, serif' y comenta las diferencias.
+    La diferencia es que Georgia serif tiene detalles en las puntas de cada letra mientras que Arial sans-serif muestra las letras sin adornos
+*/
+body {
+    font-family: Georgia, serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+.subtitulo {
+    font-style: italic;
+    color: #bbdefb;
+}
+
+/* Contenido principal */
+main {
+    padding: 1rem 2rem;
+}
+
+h2 {
+    color: #1565c0;
+    border-bottom: 2px solid #1565c0;
+}
+
+/* 6. Cambia el list-style a 'circle' o 'decimal' y ajusta el padding de las listas */
+ul {
+    list-style-type: circle;
+    padding-left: 3rem; 
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    background-color: #e3f2fd;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* 4. Añadir un botón o enlace con estilo propio */
+.boton {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background-color: #1565c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+.boton:hover {
+    background-color: #0e1ef3;
+}
+
+/* 7. Crea una clase .tarjeta con borde, padding y sombra y úsala en una sección */
+.tarjeta {
+    border: 1px solid #cacaca;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 8px 15px 8px rgba(5, 5, 5, 0.15);
+    border-radius: 8px;
+}
