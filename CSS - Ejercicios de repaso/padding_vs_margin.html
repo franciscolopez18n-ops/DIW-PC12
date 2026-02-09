@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Padding vs Margin</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f0f4f8;
+      color: #111827;
+    }
+
+    h1 {
+      color: #2563eb;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2563eb;
+      color: white;
+    }
+
+    .box-example {
+      margin-top: 40px;
+    }
+
+    .box {
+      margin: 20px;               /* Espacio exterior */
+      border: 3px solid #2563eb;  /* Borde */
+      padding: 16px;              /* Espacio interior */
+      width: 200px;
+      text-align: center;
+      background-color: #e0f2fe;
+      font-family: monospace;
+      position: relative;
+    }
+
+    .box::before {
+      content: "[MARGIN]";
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      font-size: 0.8rem;
+      color: #ef4444;
+    }
+
+    .box .padding-label {
+      border: 1px dashed #10b981;
+      padding: 8px;               /* Espacio interior de ejemplo */
+      background-color: #f0fff4;
+      margin: 0 auto;
+    }
+
+    /* Ejemplos prácticos de padding y margin */
+    .example {
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+    }
+
+    .padding-example, .margin-example {
+      border: 2px solid #2563eb;
+      width: 150px;
+      text-align: center;
+      background-color: #e0f2fe;
+      padding: 10px;  /* Para el ejemplo de padding */
+    }
+
+    .margin-example {
+      margin: 20px;   /* Para el ejemplo de margin */
+      padding: 10px;
+      background-color: #fef3c7;
+    }
+
+    .example span {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Diferencia rápida entre Padding y Margin</h1>
+
+  <table>
+    <tr>
+      <th>Propiedad</th>
+      <th>Dónde actúa</th>
+      <th>Para qué sirve</th>
+    </tr>
+    <tr>
+      <td>padding</td>
+      <td>Dentro del borde</td>
+      <td>Separar contenido del borde</td>
+    </tr>
+    <tr>
+      <td>margin</td>
+      <td>Fuera del borde</td>
+      <td>Separar elementos entre sí</td>
+    </tr>
+  </table>
+
+  <div class="box-example">
+    <h2>Ejemplo visual mental 🧠</h2>
+    <div class="box">
+      <div class="padding-label">
+        Texto
+      </div>
+    </div>
+  </div>
+
+  <p>Imagina la caja así:</p>
+  <pre>
+[MARGIN]
+ ┌───────────────┐
+ │  BORDER       │
+ │   ┌───────┐   │
+ │   │ PADD. │   │
+ │   │ Texto │   │
+ │   └───────┘   │
+ └───────────────┘
+  </pre>
+
+  <h2>Ejemplos prácticos</h2>
+  <div class="example">
+    <div class="padding-example">
+      <span>Padding</span>
+      Contenido separado del borde
+    </div>
+
+    <div class="margin-example">
+      <span>Margin</span>
+      Caja separada de otras
+    </div>
+  </div>
+
+</body>
+</html>
