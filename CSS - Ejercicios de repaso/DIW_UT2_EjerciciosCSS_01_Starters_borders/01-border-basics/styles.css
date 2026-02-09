@@ -1,0 +1,56 @@
+.card {
+  width: 140px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  margin: 12px 0;
+  background: #f9fafb;
+}
+
+/*  
+Ejercicio 1 – Propiedades básicas de border
+    Practicar border-style, border-width y border-color 
+    Aplica diferentes estilos, grosores y colores de borde a tres cajas 
+*/
+
+.card.a {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+}
+
+.card.b {
+  border-style: dashed;
+  border-width: 4px;
+  border-color: blue;
+}
+
+.card.c {
+  border-style: dotted;
+  border-width: 3px;
+  border-color: green;
+}
+
+/*==================================================================*/
+/*=================== MOSTRAR SOLUCION =============================*/
+/* Bloque visual para mostrar la solución (en caso de que un div se encontrara dentro de otro div este hereda el estilo) */
+.solution {
+  margin-top: 24px;        /* Añade una separacion superior entre el elemento que habia antes */
+  padding: 16px;           /* Añade espacio INTERNO, entre el contenido y el borde en todas las direcciones */
+  background: #111827;     /* Fondo oscuro tipo editor */
+  color: #e5e7eb;          /* Color claro del texto */
+  font-family: monospace;  /* Fuente monoespaciada para código */
+  border-radius: 8px;      /* Esquinas redondeadas */
+}
+
+.solution h2 {
+  margin-top: 0;           /* Elimina margen superior del título (por defecto el titulo añade un margen) */
+  font-size: 1rem;         /* Tamaño de texto moderado (se puede poner en forma de porcentajes)*/
+  color: #93c5fd;          /* Color destacado para el título */
+}
+
+.solution pre {
+  margin: 0;               /* Evita márgenes extra del <pre> */
+}
+/*==================================================================*/
+/*==================================================================*/

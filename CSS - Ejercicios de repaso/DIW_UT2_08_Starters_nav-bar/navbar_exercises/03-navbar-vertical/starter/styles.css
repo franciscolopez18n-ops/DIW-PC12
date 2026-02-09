@@ -1,0 +1,6 @@
+:root{--bg:#fff;--text:#111827;--accent:#2563eb}
+*{box-sizing:border-box}
+body{margin:0;color:var(--text);font-family:system-ui,sans-serif;display:grid;grid-template-columns:240px 1fr;min-height:100vh}
+.sidebar{background:var(--bg)}
+.nav{list-style:none;margin:0;padding:0}
+/* TODO: Coloca enlaces en columna y ocupa 100vh */
